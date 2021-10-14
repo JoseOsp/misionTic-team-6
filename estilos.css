@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-navBar{
+    width: auto;
+    height: 40px;
+}
+
+.navBar {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #237b82;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #efb31e;
+    color: white;
+}
+
+.btn__link {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.form__section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__card {
+    height: 220px;
+    width: 280px;
+    color: white;
+    display: grid;
+}
+
+.form__btn {
+    background-color: #237b82;
+    color: white;
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.form__btn:hover {
+    background-color: #efb31e;
+    color: white;
+}
+
+.form__input {
+    border: 1px solid #237b82;
+    color: #237b82;
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #237b82;
+}
+
+.form__input:hover {
+    background-color: #237b82;
+    color: white;
+}
+
+.form__input:hover::placeholder {
+    color: white;
+}

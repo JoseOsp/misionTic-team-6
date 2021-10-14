@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <section class="form__section">
+        <form id="form_registrar_usuario" required class="form__card">
+            <input
+                id="nombre_usuario_input"
+                
+                placeholder="Nombre usuario"
+                class="form__input"
+                type="text"
+                name="name"
+                
+                
+                
+            >
+            <input
+                id="anoNacimiento_usuario_input"
+                placeholder="Año Nacimiento"
+                
+                class="form__input"
+                
+                type="text"
+                name="date"
+                
+            >
+            <input
+                id="contrasena_usuario_input"
+                placeholder="Contraseña"
+                
+                class="form__input"
+                type="password"
+                name="password"
+                
+            >
+            <input
+                id="confirmar_contrasena_input"
+                placeholder="Confirmar Contraseña"
+                
+                class="form__input"
+                type="password"
+                name="repeat-password"
+                
+            >
+            <button
+                id="enviar_registro"
+                type="submit"
+                class="form__btn"
+            >
+                Enviar
+            </button>
+        </form>
+    </section>
+    <script src="./validaciones.js"></script>
+</body>
+
+</html>
