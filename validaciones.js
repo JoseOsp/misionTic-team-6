@@ -1,8 +1,8 @@
-let nombre = document.querySelector("nombre_usuario_input");
-let anoNac = document.querySelector("anoNacimiento_usuario_input");
-let pcontrasena = document.querySelector("contrasena_usuario_input");
-let scontrasena = document.querySelector("confirmar_contrasena_input");
-const boton = document.getElementById("enviar_registro");
+const nombre = document.querySelector("#nombre_usuario_input");
+const anoNac = document.querySelector("#anoNacimiento_usuario_input");
+const pcontrasena = document.querySelector("#contrasena_usuario_input");
+const scontrasena = document.querySelector("#confirmar_contrasena_input");
+const boton = document.querySelector("#enviar_registro");
 
 boton.addEventListener("click", agregarRegistro);
 
@@ -11,14 +11,19 @@ let registros = [];
 function agregarRegistro() {
 
     
-    let name  = nombre.value;
-	let year =  anoNac.value;
-	let password = pcontrasena.value;
-	let cPassword = scontrasena.value;
+    const name  = nombre.value;
+	const year =  anoNac.value;
+	const password = pcontrasena.value;
+	const cPassword = scontrasena.value;
 
     let persona = new datosPersonales (name, year, password, cPassword);
     console.log(persona);
     registros.push(persona);
+    
+    nombre.value  = "";
+    anoNac.value = "";
+    pcontrasena.value = "";
+    scontrasena.value = "";
 }
 
 class datosPersonales{
@@ -30,7 +35,7 @@ class datosPersonales{
     }
 }
 
-function ValidarRegistrosUnicos(arreglo) {
+/*function ValidarRegistrosUnicos(arreglo) {
 
     const len = registros.length;
         for (let i = 0; i < len; i++) {
@@ -43,8 +48,8 @@ function ValidarRegistrosUnicos(arreglo) {
         }
         return true;
 }
-
+*/
 
 module.exports.registros = registros;
-module.exports.ValidarRegistrosUnicos = ValidarRegistrosUnicos;
+//module.exports.ValidarRegistrosUnicos = ValidarRegistrosUnicos;
 module.exports.agregarRegistro = agregarRegistro;
