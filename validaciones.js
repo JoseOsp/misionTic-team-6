@@ -8,6 +8,20 @@ boton.addEventListener("click", agregarRegistro);
 
 let registros = [];
 
+function ValidarRegistrosUnicos(arreglo) {
+
+    const len = registros.length;
+        for (let i = 0; i < len; i++) {
+            for (let j = 0; j < len; j++) {
+            // if the elements match, this wouldn't be a unique array
+            if (i !== j && registros[i] === registros[j]) {
+              return false;
+            }
+          }
+        }
+        return true;
+}
+
 function agregarRegistro() {
 
     
@@ -17,6 +31,8 @@ function agregarRegistro() {
 	const cPassword = scontrasena.value;
 
     let persona = new datosPersonales (name, year, password, cPassword);
+    // TODO: llamar ValidarRegistrosUnicos ! (revisar este campo)
+    ValidarRegistrosUnicos( persona );
     console.log(persona);
     registros.push(persona);
     
@@ -35,20 +51,6 @@ class datosPersonales{
     }
 }
 
-/*function ValidarRegistrosUnicos(arreglo) {
-
-    const len = registros.length;
-        for (let i = 0; i < len; i++) {
-            for (let j = 0; j < len; j++) {
-            // if the elements match, this wouldn't be a unique array
-            if (i !== j && registros[i] === registros[j]) {
-              return false;
-            }
-          }
-        }
-        return true;
-}
-*/
 
 module.exports.registros = registros;
 //module.exports.ValidarRegistrosUnicos = ValidarRegistrosUnicos;
