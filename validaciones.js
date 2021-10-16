@@ -10,12 +10,25 @@ let registros = [];
 
 function ValidarRegistrosUnicos(arreglo) {
 
+    let counter = 0;
+
+
     const len = registros.length;
         for (let i = 0; i < len; i++) {
-            for (let j = 0; j < len; j++) {
+            for ( let i.value === arreglo.nombre)
+
+                registro[1].nombre === arreglo.nombre
+
+            arreglo.nombre
+            arreglo.anoNac
+            arreglo.pcontrasena
+            arreglo.scontrasena
+
+
+            for (let j = 0; j < arreglo.length; j++) {
             // if the elements match, this wouldn't be a unique array
-            if (i !== j && registros[i] === registros[j]) {
-              return false;
+            if (i !== j && registros[i] === arreglo[j]) {
+              return counter >= 3 && false;
             }
           }
         }
@@ -32,9 +45,9 @@ function agregarRegistro() {
 
     let persona = new datosPersonales (name, year, password, cPassword);
     // TODO: llamar ValidarRegistrosUnicos ! (revisar este campo)
-    ValidarRegistrosUnicos( persona );
+    const validate = ValidarRegistrosUnicos( persona );
+    validate === true ? registros.push(persona) : console.log("El registro ya existe");
     console.log(persona);
-    registros.push(persona);
     
     nombre.value  = "";
     anoNac.value = "";
@@ -53,5 +66,5 @@ class datosPersonales{
 
 
 module.exports.registros = registros;
-//module.exports.ValidarRegistrosUnicos = ValidarRegistrosUnicos;
+module.exports.ValidarRegistrosUnicos = ValidarRegistrosUnicos;
 module.exports.agregarRegistro = agregarRegistro;
