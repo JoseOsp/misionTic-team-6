@@ -13,26 +13,26 @@ function ValidarRegistrosUnicos(arreglo) {
     let counter = 0;
 
 
-    const len = registros.length;
-        for (let i = 0; i < len; i++) {
-            for ( let i.value === arreglo.nombre)
+    // const len = registros.length;
+    //     for (let i = 0; i < len; i++) {
+    //         for ( let i.value === arreglo.nombre)
 
-                registro[1].nombre === arreglo.nombre
+    //             registro[1].nombre === arreglo.nombre
 
-            arreglo.nombre
-            arreglo.anoNac
-            arreglo.pcontrasena
-            arreglo.scontrasena
+    //         arreglo.nombre
+    //         arreglo.anoNac
+    //         arreglo.pcontrasena
+    //         arreglo.scontrasena
 
 
-            for (let j = 0; j < arreglo.length; j++) {
-            // if the elements match, this wouldn't be a unique array
-            if (i !== j && registros[i] === arreglo[j]) {
-              return counter >= 3 && false;
-            }
-          }
-        }
-        return true;
+    //         for (let j = 0; j < arreglo.length; j++) {
+    //         // if the elements match, this wouldn't be a unique array
+    //         if (i !== j && registros[i] === arreglo[j]) {
+    //           return counter >= 3 && false;
+    //         }
+    //       }
+    //     }
+    // return true;
 }
 
 function agregarRegistro() {

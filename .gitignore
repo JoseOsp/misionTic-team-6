@@ -1,2 +1,9 @@
 .c9
 .idea
+
+# Dependency directories
+node_modules/
+
+dist/
+
+.cache
